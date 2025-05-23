@@ -27,7 +27,7 @@ export default function ProjectsSection() {
         {/* Proyecto 2: E-commerce de productos Apple */}
         <ProjectCard
           title="E-commerce I-Shop"
-          description="Frontend de tienda online para productos Apple. Cuenta con diseño responsive, navegación por categorías, detalle de producto y carrito. Proyecto grupal realizado como entrega final del bootcamp. (Frontend desplegado)"
+          description="Frontend de tienda online para productos Apple. Cuenta con diseño responsive, navegación por categorías, detalle de producto y carrito. Proyecto individual realizado como entrega final del bootcamp. (Frontend desplegado)"
           techs={['React', 'Next.js', 'Tailwind', 'TypeScript', 'Vercel']}
           githubUrl="https://github.com/LDFuentesAscanio/front-e-commerceft57"
           demoUrl="https://front-e-commerceft57.vercel.app/"
