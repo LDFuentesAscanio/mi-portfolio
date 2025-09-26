@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #3f105e; /* morado oscuro */
+  --foreground: #f0e7ff; /* lila claro para buen contraste */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #1a0826; /* mismo fondo para dark */
+    --foreground: #f0e7ff;
+  }
+}
+
+body {
+  background: linear-gradient(to right, #a06cb8, #461280);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
