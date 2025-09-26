@@ -16,6 +16,9 @@ export const metadata: Metadata = {
   title: 'Mi Portfolio',
   description:
     'Portfolio personal de un desarrollador fullstack enfocado en frontend',
+  icons: {
+    icon: '/logo.png', // <-- aquí tu favicon
+  },
 };
 
 export default function RootLayout({

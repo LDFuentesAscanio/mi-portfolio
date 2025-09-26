@@ -58,6 +58,13 @@ export default function Home() {
             height={160}
             className="rounded-full border-4 border-foreground shadow-lg"
           />
+          <Image
+            src="/logo.png"
+            alt="Logo personal"
+            width={80} // tamaño ajustable
+            height={80} // tamaño ajustable
+            className="rounded-full border-2 border-purple-500 mt-4 shadow-md"
+          />
         </motion.div>
 
         {/* Texto animado */}
