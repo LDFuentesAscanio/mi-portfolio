@@ -1,3 +1,4 @@
+// ProjectCard.tsx
 'use client';
 import { ExternalLink } from 'lucide-react';
 import { motion } from 'framer-motion';
@@ -24,19 +25,17 @@ export default function ProjectCard({
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.6, ease: 'easeOut' }}
-      className="bg-white/90 dark:bg-neutral-900/90 backdrop-blur-md rounded-xl shadow-2xl p-6 flex flex-col justify-between space-y-4"
+      className="project-card flex flex-col justify-between space-y-4"
     >
       <div>
-        <h3 className="text-2xl text-gray-700 font-bold mb-2">{title}</h3>
-        <p className="text-base text-gray-700 dark:text-gray-300 mb-4">
-          {description}
-        </p>
+        <h3>{title}</h3>
+        <p>{description}</p>
 
-        <ul className="flex flex-wrap gap-2 text-sm">
+        <ul className="flex flex-wrap gap-2 text-sm mt-2">
           {techs.map((tech, idx) => (
             <li
               key={idx}
-              className="bg-purple-700/80 text-white px-2 py-1 rounded-full"
+              className="bg-purple-700 text-white px-2 py-1 rounded-full"
             >
               {tech}
             </li>

@@ -2,20 +2,43 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Variables globales */
 :root {
   --background: #3f105e; /* morado oscuro */
-  --foreground: #f0e7ff; /* lila claro para buen contraste */
+  --foreground: #f0e7ff; /* lila claro para textos */
+  --card-bg: #461280;    /* fondo fijo de tarjetas */
+  --card-text: #f0e7ff;  /* texto de tarjetas */
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #1a0826; /* mismo fondo para dark */
+    --background: #1a0826;
     --foreground: #f0e7ff;
+    --card-bg: #1a0826;    /* mismo fondo en dark */
+    --card-text: #f0e7ff;
   }
 }
 
+/* Estilos globales */
 body {
   background: linear-gradient(to right, #a06cb8, #461280);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Tarjetas de proyectos */
+.project-card {
+  background-color: var(--card-bg) !important; /* fijo, no transparente */
+  color: var(--card-text);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Títulos dentro de tarjetas */
+.project-card h3 {
+  color: var(--card-text);
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
 }
