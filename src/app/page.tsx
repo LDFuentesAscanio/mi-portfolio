@@ -42,15 +42,16 @@ export default function Home() {
         initial={{ opacity: 0, y: 60 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: 'easeOut' }}
-        className="mt-12 bg-white/70 dark:bg-neutral-900/70 rounded-xl shadow-md p-6 md:p-10 flex flex-col md:flex-row items-center gap-8"
+        className="mt-12 bg-neutral-100 dark:bg-neutral-900 rounded-xl shadow-md p-6 md:p-10 flex flex-col md:flex-row items-center gap-8"
       >
-        {/* Imagen con animación */}
+        {/* Imagen + logo */}
         <motion.div
           initial={{ scale: 0.8, rotate: -10 }}
           animate={{ scale: 1, rotate: 0 }}
           transition={{ duration: 0.6, type: 'spring' }}
-          className="flex-shrink-0"
+          className="flex-shrink-0 flex flex-col items-center"
         >
+          {/* Foto de perfil */}
           <Image
             src="/Profile.jpg"
             alt="Foto de perfil de Luis Daniel Fuentes"
@@ -58,12 +59,14 @@ export default function Home() {
             height={160}
             className="rounded-full border-4 border-foreground shadow-lg"
           />
+
+          {/* Logo personal debajo */}
           <Image
             src="/logo.png"
             alt="Logo personal"
-            width={80} // tamaño ajustable
-            height={80} // tamaño ajustable
-            className="rounded-full border-2 border-purple-500 mt-4 shadow-md"
+            width={90}
+            height={90}
+            className="rounded-full border-2 border-purple-500 mt-4 shadow-md bg-white dark:bg-neutral-800 p-2"
           />
         </motion.div>
 
@@ -88,14 +91,15 @@ export default function Home() {
             )}
           </p>
 
-          <p className="text-lg leading-relaxed mb-4">
+          {/* Descripción */}
+          <p className="text-lg leading-relaxed mb-4 text-gray-800 dark:text-gray-300">
             Me especializo en construir interfaces modernas, optimizadas y
             escalables usando tecnologías como{' '}
             <span className="font-semibold">React, Next.js y Tailwind CSS</span>
             . También tengo experiencia integrando{' '}
             <span className="font-semibold">
               APIs, bases de datos y autenticación
-            </span>
+            </span>{' '}
             para aplicaciones completas de uso real.
           </p>
 
