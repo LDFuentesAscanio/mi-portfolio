@@ -27,7 +27,7 @@ export default function ProjectCard({
       className="bg-white/90 dark:bg-neutral-900/90 backdrop-blur-md rounded-xl shadow-2xl p-6 flex flex-col justify-between space-y-4"
     >
       <div>
-        <h3 className="text-2xl font-bold mb-2">{title}</h3>
+        <h3 className="text-2xl text-gray-700 font-bold mb-2">{title}</h3>
         <p className="text-base text-gray-700 dark:text-gray-300 mb-4">
           {description}
         </p>
