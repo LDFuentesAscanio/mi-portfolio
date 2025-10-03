@@ -57,7 +57,7 @@ export default function ProjectsSection() {
             'Tailwind',
             'TypeScript',
             'Vercel',
-            'NesjJs',
+            'NestJs',
           ]}
           githubUrl="https://github.com/ServiciosVSB/vsb-servicios"
           demoUrl="https://vsb-servicios.vercel.app"
